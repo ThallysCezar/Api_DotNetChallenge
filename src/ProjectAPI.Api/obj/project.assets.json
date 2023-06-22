@@ -12033,11 +12033,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Api\\ProjectAPI.Api.csproj",
+      "projectUniqueName": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Api\\ProjectAPI.Api.csproj",
       "projectName": "ProjectAPI.Api",
-      "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Api\\ProjectAPI.Api.csproj",
+      "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Api\\ProjectAPI.Api.csproj",
       "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
-      "outputPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Api\\obj\\",
+      "outputPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -12059,14 +12059,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Application\\ProjectAPI.Application.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Application\\ProjectAPI.Application.csproj"
+            "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Application\\ProjectAPI.Application.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Application\\ProjectAPI.Application.csproj"
             },
-            "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj"
+            "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj"
             },
-            "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj": {
-              "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj"
+            "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj": {
+              "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj"
             }
           }
         }

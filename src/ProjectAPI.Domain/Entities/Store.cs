@@ -10,6 +10,8 @@ namespace ProjectAPI.Domain.Entities
         public string Name { get; set; }
         public string Address { get; set; }
 
+        public Store() { }
+
         //construtor quando quer adicionar
         public Store(string name, string address)
         {

@@ -1,7 +1,5 @@
 ﻿using ProjectAPI.Domain.Validations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Net;
+using System.Text.Json.Serialization;
 
 namespace ProjectAPI.Domain.Entities
 {
@@ -11,6 +9,9 @@ namespace ProjectAPI.Domain.Entities
         public string Name { get; set; }
         public decimal CostPrice { get; set; }
 
+        public Product() { }
+
+        [JsonConstructor]
         public Product(string name, decimal costPrice)
         {
             Validation(name, costPrice);

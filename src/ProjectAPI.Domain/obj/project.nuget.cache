@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3wwCDs7F53EFdJNg57zZL3vaHliCyH35baNNF45nhXqh9in2n3+nCRBzp2l7nPd4Iyp/NRv0vbnAagyHEvJeA==",
+  "dgSpecHash": "8iwgvpR0193TqcU2c4LUd5FyQNi4rZNg4OQpQnnJ58q6XqY1WNFEUGiEhdybZ7MREKOWFGTmiNtS8sv5p7Bv3g==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

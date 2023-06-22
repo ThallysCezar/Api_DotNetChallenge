@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oct/hd7zT2RLaQZxVs14ayHT38ppQ8QirbIiLyWT+5S4uENPY1u5Ul+OKC0NhMBWfK4gZ0bVLeqrut6vRWGSTQ==",
+  "dgSpecHash": "zP7uZRbl7dvD2HHjtIoceh2yQIPgYFEYU594HewW0hpKKeevPaHUuoQfcGcJM0i3/XdQt8nuj6Roc9f6GnJcaw==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Api\\ProjectAPI.Api.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Api\\ProjectAPI.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

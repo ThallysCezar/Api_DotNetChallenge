@@ -25,35 +25,78 @@ To install and run this .NET (C#) project, you will need an IDE for .NET develop
 
 That's it! You have successfully installed and set up the project. Now you can explore the functionality and start developing new features using the latest .NET technologies and concepts.
 
-<!-- ## Project Images
+## Project Images
 
 <p align="center">
-  <span>Image Home Page</span>
-  <img src="Assets/img/img.png" alt="Project Image, Home Page">
+  <span>Application Image</span>
+  <img src="./asserts/imgs/App.jpeg" alt="Project Image, Application Image">
 </p>
 
-The homepage with the Localiza car image slider was a way to draw the user's attention to the company, showcasing car images dynamically. Additionally, the technologies table could be a way to show users the technologies used in the project development, providing relevant information.
+The image showcases the application overview using Swagger as the API documentation. Swagger is a powerful tool for documenting and exploring APIs, making it easier to understand and consume the available endpoints in a system.
+
+The image displays a user-friendly and intuitive Swagger interface, presenting a list of different API endpoints. Each endpoint is accompanied by relevant information, such as the associated HTTP method (GET, POST, PUT, DELETE), the endpoint URL, and a brief description of its functionality.
+
+Additionally, the image highlights the required parameters for each endpoint, including the expected input format and available options. This information helps developers and API consumers understand how to interact with each endpoint and what data is necessary to perform desired operations.
+
+Swagger also provides clear and detailed examples of requests and responses, allowing developers to visualize the data they need to send and receive for each API call. This reduces errors and simplifies the integration process with the application.
+
+In summary, the image demonstrates the use of Swagger as an essential tool for API documentation, offering an overview of the application and facilitating understanding and interaction with the various available endpoints.
 
 <p align="center">
-  <span>Image Vehicle category</span>
-  <img src="Assets/img/img2.png" alt="Project Image, Vehicle category">
+  <span>Image of product endpoints</span>
+  <img src="./asserts/imgs/CRUDProduct.jpeg" alt="Project Image, Product endpoints">
 </p>
 
-On the car group page, the table to edit, view details, and delete each car group offers users the possibility of managing information about each department of the company in an organized way. This can make it easier to maintain information and allow for better business management.
+Listed endpoints:
+
+1. GET /products: Retrieves a list of all products.
+2. GET /products/{id}: Retrieves a specific product by its ID.
+3. POST /products: Creates a new product.
+4. PUT /products/{id}: Updates an existing product by its ID.
+5. DELETE /products/{id}: Deletes a product by its ID.
+
+These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs. 
 
 <p align="center">
-  <span>Image Sellers Page</span>
-  <img src="Assets/img/img3.png" alt="Project Image, Sellers Page">
+  <span>Image of store endpoints</span>
+  <img src="./asserts/imgs/CRUDStore.jpeg" alt="Project Image, Store endpoints">
 </p>
 
-On the sellers page, the table with the options to edit, view details, and delete each seller provides a way to manage employee information. Additionally, the ability to create new sellers can be useful for the company in cases of new hires.
+Image with their respective endpoints, however, some functions and some endpoints still need to be implemented here, which are more specific to add and remove products from the stock based on the store. List endpoints, however, here is for stockItem, not for products
+1. GET /stockItems: Retrieve a list of all products.
+2. GET /stockItems/{id}: Retrieve a specific product by its ID.
+3. POST /stockItems: Creates a new product.
+4. PUT /stockItems/{id}: Updates an existing product by its ID.
+5. DELETE /stockItems/{id}: Deletes a product by its ID.
+
+These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs.
 
 <p align="center">
-  <span>Image Search Page</span>
-  <img src="Assets/img/img4.png" alt="Project Image, Search Page">
+  <span>Image of stockItem endpoints</span>
+  <img src="./asserts/imgs/CRUDStockItem.jpeg" alt="Project Image, StockItems endpoints">
 </p>
 
-The search page can be a way to facilitate searching for specific information within the system. The simple search and the group search can offer different search options for users, helping them find the information they need more quickly and efficiently. The use of start and end dates can be useful for filtering results according to the desired period. -->
+Image with their respective endpoints, list the endpoints, as if it were here, however, here 'and store, instead of product
+1. GET /stores: Retrieves a list of all products.
+2. GET /stores/{id}: Retrieve a specific product by its ID.
+3. POST /stores: Creates a new product.
+4. PUT /stores/{id}: Updates an existing product by its ID.
+5. DELETE /stores/{id}: Deletes a product by its ID.
+
+These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs.
+
+<p align="center">
+  <span>Relationship diagram</span>
+  <img src="./asserts/imgs/UML.jpeg" alt="Project Image, Relationship diagram">
+</p>
+
+The diagram illustrates the relationships between three entities: Product, StockItem, and Store. It is a UML diagram representing the associations between these entities.
+
+The relationships depicted in the diagram are as follows:
+
+- Product 1-0..1 StockItem: This relationship signifies that a Product can have zero or one associated StockItem. It implies that a Product may or may not be in stock, and if it is in stock, there will be a corresponding StockItem.
+
+- StockItem 0..1 - 1 Store: This relationship represents that a StockItem belongs to exactly one Store, while a Store can have zero or one associated StockItem. It implies that a Store may or may not have a specific StockItem in its inventory.
 
 ## Technologies used:
 

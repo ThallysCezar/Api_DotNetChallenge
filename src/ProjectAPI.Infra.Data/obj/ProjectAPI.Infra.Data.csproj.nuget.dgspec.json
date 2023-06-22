@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj": {}
+    "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj": {
+    "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj",
+        "projectUniqueName": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj",
         "projectName": "ProjectAPI.Domain",
-        "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj",
+        "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\obj\\",
+        "outputPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj": {
+    "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj",
         "projectName": "ProjectAPI.Infra.Data",
-        "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj",
+        "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\obj\\",
+        "outputPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj": {
-                "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj"
+              "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj": {
+                "projectPath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Domain\\ProjectAPI.Domain.csproj"
               }
             }
           }

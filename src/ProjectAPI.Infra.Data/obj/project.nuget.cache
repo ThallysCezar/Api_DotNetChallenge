@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rc/VSY7YufcZ58j4HejTAP83d/PiNOSQZSHS750DIDlCKh72v7q43msEZPNn9Hx51tssenQ1ny6S/H/KAGQinA==",
+  "dgSpecHash": "sbd4hgg6igaOs8HFev6I68VR1JBN3ekKHqiZTbCq4rldHXB2tscKI4fmmv+NPXcbjNzFoaRADXMcfkpeg16eXA==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Infra.Data\\ProjectAPI.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

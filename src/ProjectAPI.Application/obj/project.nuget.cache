@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WRzZTN2CU7dvn/yBcXj5Mt4FFshSCPQsuz/LPAzSqGzkHGF4+tdMMpuemu3gQKwGBOHXcb1YhKMvF6ghJl7/Ww==",
+  "dgSpecHash": "zT5cacYYw5L4yv4/AkjMVUxB80sO1x+473icLAmoHVH7l5gSJCaTJn421WWTm8pHdlqO5dpFtJqT5cKKHtCnXQ==",
   "success": true,
-  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\ProjectAPI\\ProjectAPI.Application\\ProjectAPI.Application.csproj",
+  "projectFilePath": "C:\\Workspace\\C#\\ProjectMatheus\\src\\ProjectAPI.Application\\ProjectAPI.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\thallyscezar_frwk\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
