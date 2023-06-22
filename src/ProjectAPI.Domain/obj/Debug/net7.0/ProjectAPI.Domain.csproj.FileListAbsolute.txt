@@ -1,0 +1,12 @@
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\bin\Debug\net7.0\ProjectAPI.Domain.deps.json
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\bin\Debug\net7.0\ProjectAPI.Domain.dll
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\bin\Debug\net7.0\ProjectAPI.Domain.pdb
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.csproj.AssemblyReference.cache
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.AssemblyInfoInputs.cache
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.AssemblyInfo.cs
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.dll
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\refint\ProjectAPI.Domain.dll
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ProjectAPI.Domain.pdb
+C:\Workspace\C#\ProjectMatheus\ProjectAPI\ProjectAPI.Domain\obj\Debug\net7.0\ref\ProjectAPI.Domain.dll
