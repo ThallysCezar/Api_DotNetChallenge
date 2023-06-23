@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using FluentValidation;
 using ProjectAPI.Application.DTOs;
 using ProjectAPI.Application.DTOs.Validations;
 using ProjectAPI.Application.Services.Interfaces;

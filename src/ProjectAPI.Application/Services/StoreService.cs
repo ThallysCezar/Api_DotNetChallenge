@@ -1,15 +1,9 @@
 ﻿using AutoMapper;
-using FluentValidation;
 using ProjectAPI.Application.DTOs;
 using ProjectAPI.Application.DTOs.Validations;
 using ProjectAPI.Application.Services.Interfaces;
 using ProjectAPI.Domain.Entities;
 using ProjectAPI.Domain.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectAPI.Application.Services
 {
