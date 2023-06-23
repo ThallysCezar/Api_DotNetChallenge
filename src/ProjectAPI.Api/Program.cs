@@ -21,12 +21,12 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(
     ServerVersion.Parse("8.0.32-MySQL"))
 );
 
-// repositorios
+// repositories
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IStoreRepository, StoreRepository>();
 builder.Services.AddScoped<IStockItemRepository, StockItemRepository>();
 
-//servicos
+//services
 builder.Services.AddAutoMapper(typeof(DomainToDTOMapping));
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IStoreService, StoreService>();
@@ -34,6 +34,7 @@ builder.Services.AddScoped<IStockItemService, StockItemService>();
 
 var key = Encoding.ASCII.GetBytes(Key.Secret);
 
+//auth JWT
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -52,8 +53,9 @@ builder.Services.AddAuthentication(x =>
 });
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+//configure Swagger
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo

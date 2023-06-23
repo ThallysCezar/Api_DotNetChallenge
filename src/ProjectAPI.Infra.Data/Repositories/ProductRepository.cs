@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjectAPI.Domain.Entities;
-using ProjectAPI.Domain.Repositories;
 using ProjectAPI.Domain.Repositories.Interfaces;
 using ProjectAPI.Infra.Data.Context;
 

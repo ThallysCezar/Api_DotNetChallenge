@@ -1,6 +1,4 @@
 ﻿using ProjectAPI.Domain.Validations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace ProjectAPI.Domain.Entities
 {
@@ -12,13 +10,11 @@ namespace ProjectAPI.Domain.Entities
 
         public Store() { }
 
-        //construtor quando quer adicionar
         public Store(string name, string address)
         {
             Validation(name, address);
         }
 
-        //construtor para quando quiser editar
         public Store(int id, string name, string address)
         {
             DomainValidationException.When(Id < 0, "id greater than 0");
