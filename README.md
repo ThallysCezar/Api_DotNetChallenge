@@ -1,6 +1,8 @@
 # Products, Stores, and Inventory API 
 This project is a .NET 7.0 API for managing products, stores, and the inventory of a specific store. The API provides endpoints for creating, retrieving, updating, and deleting products, stores, and inventory items. Additionally, the API allows adding and removing products from a store's inventory while keeping track of the available quantity.
 
+In this API project I made a small pagination, where users can specify the page number (pageNumber) and the number of items per page (pageQuantity) to retrieve the desired items. Additionally, the project includes authorization using token generation. To obtain the token, users need to provide a username ("admin") and password. This will generate a Bearer JWT token, which is needed to add, modify, and delete data, ensuring secure API access.
+
 ## Installation
 
 To install and run this .NET (C#) project, you will need an IDE for .NET development, such as Visual Studio or Visual Studio Code. You will also need MySQL (Workbench) to manage the database. Follow the steps below to set up and run the project:
@@ -43,13 +45,20 @@ Swagger also provides clear and detailed examples of requests and responses, all
 In summary, the image demonstrates the use of Swagger as an essential tool for API documentation, offering an overview of the application and facilitating understanding and interaction with the various available endpoints.
 
 <p align="center">
+  <span>Auth Image</span>
+  <img src="./asserts/imgs/Auth.jpeg" alt="Project Image, Auth Image">
+</p>
+
+The authorization process requires the user to enter a username and password (both set as "admin"). Currently, I have implemented a static authorization for learning purposes, as I am still exploring more advanced security measures. With this authentication, the user generates an access token that grants them permission to perform update, delete, and add operations. To generate the token, the user needs to click on the lock icon, and upon authorization, they will receive the necessary token to include in their requests. For example, if the user wants to make a POST request for a specific product, they will need to generate a Bearer JWT token, copy the code, and authorize the request by including the generated token.
+
+<p align="center">
   <span>Image of product endpoints</span>
   <img src="./asserts/imgs/CRUDProduct.jpeg" alt="Project Image, Product endpoints">
 </p>
 
 1. GET/products: Retrieves a list of all products.
-  - Description: This endpoint returns a list of all products available.
-  - Example: 'GET/products'.
+  - Description: This endpoint allows users to retrieve a list of products. However, before making a GET request, the user must generate and authorize an access token. Once authorized, the user can include the desired page number (pageNumber) and the number of items per page (pageQuantity) as query parameters to control the pagination.
+  - Example: 'GET/products?pageNumber=1&pageQuantity=10' retrieves the first page of products with 10 items per page.
 
 2. GET/products/{id}: Retrieves a specific product by its ID.
  - Description: This endpoint retrieves a product based on the provided ID.
@@ -68,31 +77,31 @@ In summary, the image demonstrates the use of Swagger as an essential tool for A
  - Example: 'DELETE/products/123'
 
 <p align="center">
-  <span>Image of store endpoints</span>
+  <span>Image of Store endpoints</span>
   <img src="./asserts/imgs/CRUDStore.jpeg" alt="Project Image, Store endpoints">
 </p>
 
 Image with their respective endpoints, however, some functions and some endpoints still need to be implemented here, which are more specific to add and remove products from the stock based on the store. List endpoints, however, here is for stockItem, not for products
 
-1. GET/stockItems: Retrieve a list of all stock items.
-  - Description: This endpoint returns a list of all stock items available.
-  - Example: 'GET/stockItems'.
+1. GET/stockItems: Retrieve a list of all store.
+  - Description: This endpoint allows users to retrieve a list of store. However, before making a GET request, the user must generate and authorize an access token. Once authorized, the user can include the desired page number (pageNumber) and the number of items per page (pageQuantity) as query parameters to control the pagination.
+  - Example: 'GET/store?pageNumber=1&pageQuantity=10' retrieves the first page of products with 10 items per page.
 
 2. GET/stockItems/{id}: Retrieves a specific product by its ID.
  - Description: This endpoint retrieves a stock item based on the provided ID.
- - Example: 'GET/stockItems/456'.
+ - Example: 'GET/store/456'.
 
 3. POST/stockItems: Creates a new product.
  - Description: This endpoint allows creating a new stock item with the provided data.
- - Example: 'POST/stockItems'.
+ - Example: 'POST/store'.
 
 4. PUT/stockItems/{id}: Updates an existing product by its ID.
  - Description: This endpoint updates an existing stock item identified by the provided ID with the provided data.
- - Example: 'PUT/stockItems/456'.
+ - Example: 'PUT/store/456'.
 
 5. DELETE/stockItems/{id}: Deletes a product by its ID.
  - Description:  This endpoint deletes the stock item identified by the provided ID.
- - Example: 'DELETE/stockItems/456'
+ - Example: 'DELETE/store/456'
 
 These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs.
 
@@ -104,24 +113,24 @@ These are basic CRUD (Create, Read, Update, Delete) operations commonly used in 
 Image with their respective endpoints, list the endpoints, as if it were here, however, here 'and store, instead of product
 
 1. GET/stores: Retrieve a list of all stock items.
-  - Description: This endpoint returns a list of all stores available.
-  - Example: 'GET/stores'.
+  - Description: This endpoint allows users to retrieve a list of stock items. However, before making a GET request, the user must generate and authorize an access token. Once authorized, the user can include the desired page number (pageNumber) and the number of items per page (pageQuantity) as query parameters to control the pagination.
+  - Example: 'GET/stockItems?pageNumber=1&pageQuantity=10' retrieves the first page of products with 10 items per page.
 
 2. GET/stores/{id}: Retrieves a specific product by its ID.
  - Description: This endpoint retrieves a store based on the provided ID.
- - Example: 'GET/stores/789'.
+ - Example: 'GET/stockItems/789'.
 
 3. POST/stores: Creates a new product.
  - Description: This endpoint allows creating a new store with the provided data.
- - Example: 'POST/stores'.
+ - Example: 'POST/stockItems'.
 
 4. PUT/stores/{id}: Updates an existing product by its ID.
  - Description: This endpoint updates an existing store identified by the provided ID with the provided data.
- - Example: 'PUT/stores/789'.
+ - Example: 'PUT/stockItems/789'.
 
 5. DELETE/stores/{id}: Deletes a product by its ID.
  - Description:  This endpoint deletes the store identified by the provided ID.
- - Example: 'DELETE/stores/789'
+ - Example: 'DELETE/stockItems/789'
 
 These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs.
 
@@ -147,8 +156,11 @@ This project utilizes the following technologies and libraries for developing a 
 - MySQL: A popular relational database management system used for storing and retrieving data.
 - AutoMapper: A library for object-to-object mapping, simplifying the process of mapping DTOs (Data Transfer Objects) to entity models and vice versa.
 - FluentValidation: A library for validating objects, ensuring the data meets specific criteria.
+- JSON Web Token (JWT): A standard for securely transmitting information between parties as a JSON object, used for generating authorization tokens.
 
-By using .NET 7.0, Entity Framework Core, MySQL, and other libraries, this API enables developers to efficiently manage products, stores, and inventory for a given store. It provides endpoints for creating, retrieving, updating, and deleting products, stores, and inventory items. Additionally, it allows for adding and removing products from a store's inventory while tracking the available quantity.
+By using .NET 7.0, Entity Framework Core, MySQL, and other libraries, this API enables developers to efficiently manage products, stores, and inventory for a given store. It provides endpoints for creating, retrieving, updating, and deleting products, stores, and inventory items. Additionally, pagination has been implemented for retrieving lists of products, stores, and stock items.
+
+To perform delete, put, and post operations on each resource, the user is required to generate an authorization token using JWT. This token ensures that only authorized requests can modify the data.
 
 Throughout the development of this project, I gained valuable experience in working with the latest technologies and concepts in the .NET ecosystem. By leveraging the power of .NET 7.0, I was able to take advantage of its enhanced features and performance improvements. Entity Framework Core facilitated seamless database interactions, and MySQL served as a reliable and scalable storage solution.
 
