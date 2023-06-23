@@ -47,15 +47,25 @@ In summary, the image demonstrates the use of Swagger as an essential tool for A
   <img src="./asserts/imgs/CRUDProduct.jpeg" alt="Project Image, Product endpoints">
 </p>
 
-Listed endpoints:
+1. GET/products: Retrieves a list of all products.
+  - Description: This endpoint returns a list of all products available.
+  - Example: 'GET/products'.
 
-1. GET /products: Retrieves a list of all products.
-2. GET /products/{id}: Retrieves a specific product by its ID.
-3. POST /products: Creates a new product.
-4. PUT /products/{id}: Updates an existing product by its ID.
-5. DELETE /products/{id}: Deletes a product by its ID.
+2. GET/products/{id}: Retrieves a specific product by its ID.
+ - Description: This endpoint retrieves a product based on the provided ID.
+ - Example: 'GET/products/123'.
 
-These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs. 
+3. POST/products: Creates a new product.
+ - Description: This endpoint allows creating a new product with the provided data.
+ - Example: 'POST/products'.
+
+4. PUT/products/{id}: Updates an existing product by its ID.
+ - Description: This endpoint updates an existing product identified by the provided ID with the provided data.
+ - Example: 'PUT/products/123'.
+
+5. DELETE/products/{id}: Deletes a product by its ID.
+ - Description: This endpoint deletes the product identified by the provided ID.
+ - Example: 'DELETE/products/123'
 
 <p align="center">
   <span>Image of store endpoints</span>
@@ -63,11 +73,26 @@ These are basic CRUD (Create, Read, Update, Delete) operations commonly used in 
 </p>
 
 Image with their respective endpoints, however, some functions and some endpoints still need to be implemented here, which are more specific to add and remove products from the stock based on the store. List endpoints, however, here is for stockItem, not for products
-1. GET /stockItems: Retrieve a list of all products.
-2. GET /stockItems/{id}: Retrieve a specific product by its ID.
-3. POST /stockItems: Creates a new product.
-4. PUT /stockItems/{id}: Updates an existing product by its ID.
-5. DELETE /stockItems/{id}: Deletes a product by its ID.
+
+1. GET/stockItems: Retrieve a list of all stock items.
+  - Description: This endpoint returns a list of all stock items available.
+  - Example: 'GET/stockItems'.
+
+2. GET/stockItems/{id}: Retrieves a specific product by its ID.
+ - Description: This endpoint retrieves a stock item based on the provided ID.
+ - Example: 'GET/stockItems/456'.
+
+3. POST/stockItems: Creates a new product.
+ - Description: This endpoint allows creating a new stock item with the provided data.
+ - Example: 'POST/stockItems'.
+
+4. PUT/stockItems/{id}: Updates an existing product by its ID.
+ - Description: This endpoint updates an existing stock item identified by the provided ID with the provided data.
+ - Example: 'PUT/stockItems/456'.
+
+5. DELETE/stockItems/{id}: Deletes a product by its ID.
+ - Description:  This endpoint deletes the stock item identified by the provided ID.
+ - Example: 'DELETE/stockItems/456'
 
 These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs.
 
@@ -77,11 +102,26 @@ These are basic CRUD (Create, Read, Update, Delete) operations commonly used in 
 </p>
 
 Image with their respective endpoints, list the endpoints, as if it were here, however, here 'and store, instead of product
-1. GET /stores: Retrieves a list of all products.
-2. GET /stores/{id}: Retrieve a specific product by its ID.
-3. POST /stores: Creates a new product.
-4. PUT /stores/{id}: Updates an existing product by its ID.
-5. DELETE /stores/{id}: Deletes a product by its ID.
+
+1. GET/stores: Retrieve a list of all stock items.
+  - Description: This endpoint returns a list of all stores available.
+  - Example: 'GET/stores'.
+
+2. GET/stores/{id}: Retrieves a specific product by its ID.
+ - Description: This endpoint retrieves a store based on the provided ID.
+ - Example: 'GET/stores/789'.
+
+3. POST/stores: Creates a new product.
+ - Description: This endpoint allows creating a new store with the provided data.
+ - Example: 'POST/stores'.
+
+4. PUT/stores/{id}: Updates an existing product by its ID.
+ - Description: This endpoint updates an existing store identified by the provided ID with the provided data.
+ - Example: 'PUT/stores/789'.
+
+5. DELETE/stores/{id}: Deletes a product by its ID.
+ - Description:  This endpoint deletes the store identified by the provided ID.
+ - Example: 'DELETE/stores/789'
 
 These are basic CRUD (Create, Read, Update, Delete) operations commonly used in RESTful APIs.
 
