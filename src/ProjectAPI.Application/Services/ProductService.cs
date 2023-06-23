@@ -32,10 +32,10 @@ namespace ProjectAPI.Application.Services
             return ResultService.Ok(_mapper.Map<ProductDTO>(data));
         }
 
-        public async Task<ResultService<ICollection<ProductDTO>>> GetAsync()
+        public async Task<ResultService<ICollection<ProductDTO>>> GetAsync(int pageNumber = 0, int pageQuantity = int.MaxValue)
         {
-            var products = await _productRepository.GetAllASync();
-            return ResultService.Ok<ICollection<ProductDTO>>(_mapper.Map<ICollection<ProductDTO>>(products));
+            var products = await _productRepository.GetAllASync(pageNumber, pageQuantity);
+            return ResultService.Ok(_mapper.Map<ICollection<ProductDTO>>(products));
         }
 
         public async Task<ResultService<ProductDTO>> GetByIdAsync(int id)

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjectAPI.Domain.Entities;
+using ProjectAPI.Domain.Repositories;
 using ProjectAPI.Domain.Repositories.Interfaces;
 using ProjectAPI.Infra.Data.Context;
 
@@ -20,9 +21,18 @@ namespace ProjectAPI.Infra.Data.Repositories
             return product;
         }
 
-        public async Task<List<Product>> GetAllASync()
+        public async Task<List<Product>> GetAllASync(int pageNumber, int pageQuantity)
         {
-            return await _context.Products.ToListAsync();
+            if (pageNumber < 0)
+                pageNumber = 0;
+
+            if (pageQuantity <= 0)
+                pageQuantity = int.MaxValue;
+
+            return await _context.Products
+                    .Skip(pageNumber * pageQuantity)
+                    .Take(pageQuantity)
+                    .ToListAsync();
         }
 
         public async Task<Product> UpdateAsync(Product product)

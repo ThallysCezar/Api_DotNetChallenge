@@ -32,9 +32,9 @@ namespace ProjectAPI.Application.Services
             return ResultService.Ok(_mapper.Map<StockItemDTO>(data));
         }
 
-        public async Task<ResultService<List<StockItemDTO>>> GetAllAsync()
+        public async Task<ResultService<List<StockItemDTO>>> GetAllAsync(int pageNumber = 0, int pageQuantity = int.MaxValue)
         {
-            var stockItems = await _stockItemRepository.GetAllAsync();
+            var stockItems = await _stockItemRepository.GetAllAsync(pageNumber, pageQuantity);
             return ResultService.Ok(_mapper.Map<List<StockItemDTO>>(stockItems));
         }
 

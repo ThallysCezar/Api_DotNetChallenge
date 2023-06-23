@@ -528,3 +528,4 @@ C:\Workspace\C#\ProjectMatheus\src\ProjectAPI.Api\obj\Debug\net7.0\refint\Projec
 C:\Workspace\C#\ProjectMatheus\src\ProjectAPI.Api\obj\Debug\net7.0\ProjectAPI.Api.pdb
 C:\Workspace\C#\ProjectMatheus\src\ProjectAPI.Api\obj\Debug\net7.0\ProjectAPI.Api.genruntimeconfig.cache
 C:\Workspace\C#\ProjectMatheus\src\ProjectAPI.Api\obj\Debug\net7.0\ref\ProjectAPI.Api.dll
+C:\Workspace\C#\ProjectMatheus\src\ProjectAPI.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

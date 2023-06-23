@@ -39,9 +39,9 @@ namespace ProjectAPI.Application.Services
             return ResultService.Ok(_mapper.Map<StoreDTO>(data));
         }
 
-        public async Task<ResultService<ICollection<StoreDTO>>> GetAsync()
+        public async Task<ResultService<ICollection<StoreDTO>>> GetAsync(int pageNumber = 0, int pageQuantity = int.MaxValue)
         {
-            var stores = await _storeRepository.GetAllASync();
+            var stores = await _storeRepository.GetAllASync(pageNumber, pageQuantity);
             return ResultService.Ok(_mapper.Map<ICollection<StoreDTO>>(stores));
         }
 

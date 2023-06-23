@@ -27,9 +27,18 @@ namespace ProjectAPI.Infra.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<List<Store>> GetAllASync()
+        public async Task<List<Store>> GetAllASync(int pageNumber, int pageQuantity)
         {
-            return await _context.Stores.ToListAsync();
+            if (pageNumber < 0)
+                pageNumber = 0;
+
+            if (pageQuantity <= 0)
+                pageQuantity = int.MaxValue;
+
+            return await _context.Stores
+                    .Skip(pageNumber * pageQuantity)
+                    .Take(pageQuantity)
+                    .ToListAsync();
         }
 
         public async Task<Store> GetByIdAsync(int id)

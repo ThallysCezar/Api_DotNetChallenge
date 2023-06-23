@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProjectAPI.Application.DTOs;
 using ProjectAPI.Application.Services;
 using ProjectAPI.Application.Services.Interfaces;
@@ -19,14 +20,15 @@ namespace ProjectAPI.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetAsync()
+        public async Task<ActionResult> GetAsync(int? pageNumber, int? pageQuantity)
         {
-            var result = await _stockItemService.GetAllAsync();
+            var result = await _stockItemService.GetAllAsync(pageNumber ?? 0, pageQuantity ?? int.MaxValue);
             if (result.IsSuccess)
                 return Ok(result);
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult> GetByAsync(int id)
         {
@@ -36,6 +38,7 @@ namespace ProjectAPI.Api.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> PostAsync([FromBody] StockItemDTO stockItemDTO)
         {
@@ -45,6 +48,7 @@ namespace ProjectAPI.Api.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult> UpdateAsync([FromBody] StockItemDTO stockItemDTO)
         {
@@ -54,6 +58,7 @@ namespace ProjectAPI.Api.Controllers
             return BadRequest(result);
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAsync(int id)
         {

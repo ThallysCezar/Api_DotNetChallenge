@@ -5,7 +5,7 @@ namespace ProjectAPI.Domain.Repositories.Interfaces
     public interface IStockItemRepository
     {
         Task<StockItem> CreateAsync(StockItem stockItem);
-        Task<List<StockItem>> GetAllAsync();
+        Task<List<StockItem>> GetAllAsync(int pageNumber, int pageQuantity);
         Task<StockItem> GetByIdAsync(int id);
         Task<StockItem> UpdateAsync(StockItem stockItem);
         Task DeleteAsync(StockItem stockItem);

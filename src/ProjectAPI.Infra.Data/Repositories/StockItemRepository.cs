@@ -26,9 +26,18 @@ namespace ProjectAPI.Infra.Data.Repositories
             return await _context.StockItems.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<List<StockItem>> GetAllAsync()
+        public async Task<List<StockItem>> GetAllAsync(int pageNumber, int pageQuantity)
         {
-            return await _context.StockItems.ToListAsync();
+            if (pageNumber < 0)
+                pageNumber = 0;
+
+            if (pageQuantity <= 0)
+                pageQuantity = int.MaxValue;
+
+            return await _context.StockItems
+                    .Skip(pageNumber * pageQuantity)
+                    .Take(pageQuantity)
+                    .ToListAsync();
         }
 
         public async Task<StockItem> UpdateAsync(StockItem stockItem)

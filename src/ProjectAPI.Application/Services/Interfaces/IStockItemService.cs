@@ -5,7 +5,7 @@ namespace ProjectAPI.Application.Services.Interfaces
     public interface IStockItemService
     {
         Task<ResultService<StockItemDTO>> CreateAsync(StockItemDTO stockItemDTO);
-        Task<ResultService<List<StockItemDTO>>> GetAllAsync();
+        Task<ResultService<List<StockItemDTO>>> GetAllAsync(int pageNumber, int pageQuantity);
         Task<ResultService<StockItemDTO>> GetByIdAsync(int id);
         Task<ResultService> UpdateAsync(StockItemDTO stockItemDTO);
         Task<ResultService> DeleteAsync(int id);
